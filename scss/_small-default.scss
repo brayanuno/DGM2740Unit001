@@ -1,0 +1,86 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/*---------BODY GOES HERE-----------*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Days One', sans-serif;
+//    font-size:bold;
+    h1{
+    color:black;
+    font-size: $fontSize;
+    }
+}
+
+/*---------HEADER GOES HERE-----------*/
+header {
+    max-width: 75rem;//1200px
+    margin:0 auto;
+    background-color: $primaryColor;
+    padding: 1rem $gutter;
+    h1 {
+        color:white;
+    }
+}
+
+/*---------NAV GOES HERE-----------*/
+nav  {
+    max-width: 75rem;//1200px
+    margin: auto;
+    background-color: $secondaryColor;
+    ul li {
+        float: left;
+        width: 50%;
+        border-right: 1px solid rgba(0,0,0,0.3);
+    }
+    ul li:last-child {
+        border:none;    
+    }
+    ul li a {
+        display: block;
+        font-size: $fontSize;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        padding: 1rem 0;
+        transition: background 0.75s ease,color 0.75s ease;
+    }
+    ul li a:hover {
+        background-color:$primaryColor;
+        color:black;
+    }
+    ul li.active a {
+        background-color:darken($secondaryColor,10%);
+        color: darken(white,10%);
+    }
+}
+
+/*---------MAIN GOES HERE-----------*/
+
+main {
+    max-width: 75rem;//1200px
+    margin:0 auto;
+    padding: 1rem $gutter; 
+}
+/*---------FOOTER GOES HERE-----------*/
+footer {
+    max-width: 75rem;//1200px
+    margin:0 auto;
+    background-color:$primaryColor;
+    h2 {
+        color:white;
+        text-align: center;
+        padding: 1rem;
+    }
+}
+
+/*---------CLEARFIX GOES HERE-----------*/
+.clearfix:after {
+    content:"";
+    display:table;
+    clear: both;//stop for collapsing
+}
