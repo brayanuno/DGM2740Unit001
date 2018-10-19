@@ -99,9 +99,7 @@ html {
 
 /*---------BODY GOES HERE-----------*/
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Days One', sans-serif; }
+  font-family: "Roboto", sans-serif; }
   body h1 {
     color: black;
     font-size: 2rem; }
@@ -123,7 +121,7 @@ nav {
   nav ul li {
     float: left;
     width: 50%;
-    border-right: 1px solid rgba(0, 0, 0, 0.3); }
+    border-right: 2px solid rgba(0, 0, 0, 0.3); }
   nav ul li:last-child {
     border: none; }
   nav ul li a {
@@ -167,7 +165,8 @@ footer {
   /*---------NAV GOES HERE-----------*/
   nav ul li {
     width: 20%; } }
-@media only screen and (min-width: 1140px) {
+@media only screen and (min-width: 1024px) {
   /*---------NAV GOES HERE-----------*/
   nav ul li {
-    width: 10%; } }
+    float: left;
+    width: 15%; } }
